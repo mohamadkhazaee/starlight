@@ -1,0 +1,262 @@
+#related-products{
+    box-shadow:  1px 1px 5px rgba(0,0,0,0.1 ), 0 1px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    padding-bottom: 0 !important;
+
+    .row{
+        .related-menu{
+            display: flex !important;
+            flex-direction: column;
+            .related-header{
+                width: 100%;
+                height: 50px;
+                background-color: #f4f4f4 !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #e8e8e8;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 0px;
+                color: #666;
+            }
+            .related-tabs-menu{
+                display: flex !important;
+                flex-direction: column !important;
+                margin: 0;
+                border-bottom: none !important;
+                padding-right: 0;
+                li{
+                    .active{
+                        background-color:#F9BC02 ;
+                        color: #fff;
+                    }
+                    a{
+                        width: 100%;
+                height: 50px;
+                background-color: #fff ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #e8e8e8;
+                border-top: 0;
+                color: #999;
+                transition: all ease .3s;
+                &:hover{
+                    background-color:#F9BC02 ;
+                    color: #fff;
+                }
+                    }
+                }
+            }
+        }
+        .owl-container{
+            margin-bottom: 0px;
+            .related-owl{
+                width: 100%;
+                &:hover{
+                    .owl-nav{
+                        display: flex;
+                    }
+                }
+                .owl-nav{
+                    margin-top: 0 !important;
+                    top: 50%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    display: none;
+                    z-index: 10000;
+                    .owl-prev {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                    }
+                    .owl-next {
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                    }
+                    .owl-prev , .owl-next{
+                        width: 35px;
+                        height: 36px;
+                        margin: 0;
+                        background-color: rgba(0,0,0,.4);
+                        color: #fff;
+                        transition: all ease .3s;
+                        z-index: 1000 !important;
+                        &:hover{
+                            background-color: rgba(0,0,0,.6);
+                        }
+                    }
+                }
+                .item{
+                    border: 1px solid #e8e8e8;
+                    overflow: hidden;
+                    .related-item{
+                        height:300px;
+                        width: 100%;
+                        position: relative;
+                        .item-badge{
+                            position: absolute;
+                            padding-top: 10px;
+                            width: 50px;
+                            height: 40px;
+                            background-color:#F9BC02;
+                            top: 5px;
+                            top: 0;
+                            right: 20px;
+                            z-index: 1001;
+                            display: flex;
+                            justify-content: center;
+                            color: #fff;
+                            flex-direction: column;
+                            align-items: center;
+                              &::after{
+                                  content: '';
+                                  position: absolute;
+                                  z-index: 1000;
+                                  bottom: -25px;
+                                  left: 0;
+                                  width: 25px;
+                                  height: 20px;
+                                  background-color: rgba(0, 0, 0, 0);
+                                  box-sizing: border-box;
+                                  border-left: none;
+                                  border-top: none;
+                                  border-right: 25px solid #F9BC02;
+                                  border-bottom: 25px solid transparent;
+                              }
+                              &::before{
+                                  content: '';
+                                  position: absolute;
+                                  z-index: 1000;
+                                  bottom: -25px;
+                                  right:  0;
+                                  width: 25px;
+                                  height: 20px;
+                                  background-color: rgba(0, 0, 0, 0);
+                                  box-sizing: border-box;
+                                  border-right: none;
+                                  border-top: none;
+                                  border-left: 25px solid #F9BC02;
+                                  border-bottom: 25px solid rgba(0, 0, 0, 0);
+                              }
+                            .off{
+                              font-size: 13px;
+                              font-weight: bold;
+                            }
+                            .percent{
+                              font-size: 12px;
+                            }
+                        }
+                        &:hover{
+                            .imgs-link .imgs .first{
+                                top: -100%;
+                            }
+                            .imgs-link .imgs .second{
+                                top: 0;
+                            }
+                            .pannel{
+                                bottom: 0;
+                            }
+                          
+                        }
+                      .imgs-link{
+                        .imgs{
+                            width: 100%;
+                            position: relative;
+                            height: 100%;
+                            transition: all ease .3s;
+                           
+                            .first{
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                z-index:100;
+                                transition: all ease .3s;
+                            }
+                            .second{
+                                width: 100%;
+                                position: absolute;
+                                top:100%;
+                                left: 0;
+                                height: 100%;
+                                width: 100%;
+                                height: 100%;
+                                z-index: 1000;
+                                transition: all ease .3s;
+                            }
+                        }
+                      }
+                      .pannel{
+                          position: absolute;
+                          bottom: -100%;
+                          left: 0;
+                          width: 100%;
+                          z-index: 1001;
+                          transition: all ease .3s;
+                        .btns{
+                            width: 100%;
+                            background-color: rgba(0,0,0,.6);
+                            height: 40px;
+                            display: flex;
+                            margin:0;
+                            justify-content: center;
+                            align-items: center;
+                            a{
+                                height: 100%;
+                                width: 40px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: #fff;
+                                transition: all ease .3s;
+                                &:hover{
+                                    background-color: rgba(0,0,0,.8);
+                                   color: #f9bc02;
+                                }
+                                i{
+                                    font-size: 18px;
+                                    
+                                }
+                            }
+                        }
+                        .add-to-card{
+                           a{
+                            width: 100%;
+                            height: 40px;
+                            background-color: #F9BC02;
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            i{
+                                margin-left: 10px;
+                               transition: all ease .3s;
+
+                            }
+                            span{
+                                transition: all ease .3s;
+                            }
+                            &:hover{
+                                i{
+                                    margin-left: 15px;
+                                }
+                                span{
+                                    margin-right: 5px;
+                                }
+                            }
+                           }
+                        }
+                      }
+                    }
+                }
+            }
+        }
+    }
+}

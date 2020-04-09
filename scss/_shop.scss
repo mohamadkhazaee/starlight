@@ -1,0 +1,343 @@
+#shopPage{
+    margin-top: 20px;
+    .row{
+        .category-info{
+            border: 1px solid #e8e8e8;
+            padding: 20px 25px;
+            margin-bottom: 30px;
+            .category-title{
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+            }
+            .category-body{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                overflow: hidden;
+                img{
+                    width: 48%;
+                    height: 250px;
+                }
+                .category-caption{
+                    width: 48%;
+                    height: 250px;
+                    overflow-y: scroll;
+                    border: 1px solid #e8e8e8;
+                    padding: 15px;
+                }
+            }
+        }
+        .shop-sideBar{
+            border: 1px solid #e8e8e8;
+            width: 100%;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            .sidebar-category{
+                width: 100%;
+                margin-bottom: 10px;
+                .category-header{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    span{
+                        color: #666;
+                        font-weight: bold;
+                    }
+                    button{
+                        color: #666;
+                        font-size: 12px;
+                    }
+                }
+                .category-ul{
+                    transition: all 2s ease-in-out;
+                    ul{
+                        padding-right: 20px !important;
+                        padding-bottom: 10px;
+                        padding-top: 20px;
+                        border-bottom: 1px solid #e8e8e8;
+                        li{
+                            a{
+                                display: block;
+                                margin-bottom: 10px;
+                                color: #666;
+                                transition: all ease .4s;
+                                &:hover{
+                                    color: #007dc5;
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .category-ul-open{
+                    height: 200px;
+                }
+            }
+            .sidebar-range{
+                .range-header{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    span{
+                        color: #666;
+                        font-weight: bold;
+                    }
+                    button{
+                        color: #666;
+                        font-size: 12px;
+                    }
+                }
+                .range-box{
+                    margin-top: 20px;
+                    padding-right: 20px;
+                    input[type=range] {
+                        -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+                        width: 100% !important; /* Specific width is required for Firefox. */
+                        background: transparent; /* Otherwise white in Chrome */
+                      }
+                      
+                      input[type=range]::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                      }
+                      
+                      input[type=range]:focus {
+                        outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+                      }
+                      
+                      input[type=range]::-ms-track {
+                        width: 100%;
+                        cursor: pointer;
+                      
+                        /* Hides the slider so custom styles can be added */
+                        background: transparent; 
+                        border-color: transparent;
+                        color: transparent;
+                      }
+                      input[type=range]::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 3px;
+                        background: #007dc5;
+                        cursor: pointer;
+                        margin-top: -6px;
+                      }
+                      input[type=range]::-moz-range-thumb {
+                        -webkit-appearance: none;
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 3px;
+                        background: #007dc5;
+                        cursor: pointer;
+                      }
+                      input[type=range]::-ms-thumb {
+                        -webkit-appearance: none;
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 3px;
+                        background: #007dc5;
+                        cursor: pointer;
+                      }
+                      input[type=range]::-webkit-slider-runnable-track {
+                        width: 100%;
+                        height: 7px;
+                        cursor: pointer;
+                        background: #3071a9;
+                        border-radius: 1.3px;
+                      }
+                      .price-show{
+                          margin-top: 8px;
+                      }
+                }
+            }
+        }
+        .shop-items-container{
+            .related-item{
+                height:300px;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                border: 1px solid #e8e8e8;
+                position: relative;
+                margin-bottom: 20px;
+                .item-badge{
+                    position: absolute;
+                    padding-top: 10px;
+                    width: 50px;
+                    height: 40px;
+                    background-color:#FA6165;
+                    top: 5px;
+                    top: 0;
+                    right: 20px;
+                    z-index: 1001;
+                    display: flex;
+                    justify-content: center;
+                    color: #fff;
+                    flex-direction: column;
+                    align-items: center;
+                      &::after{
+                          content: '';
+                          position: absolute;
+                          z-index: 1000;
+                          bottom: -25px;
+                          left: 0;
+                          width: 25px;
+                          height: 20px;
+                          background-color: rgba(0, 0, 0, 0);
+                          box-sizing: border-box;
+                          border-left: none;
+                          border-top: none;
+                          border-right: 25px solid #FA6165;
+                          border-bottom: 25px solid transparent;
+                      }
+                      &::before{
+                          content: '';
+                          position: absolute;
+                          z-index: 1000;
+                          bottom: -25px;
+                          right:  0;
+                          width: 25px;
+                          height: 20px;
+                          background-color: rgba(0, 0, 0, 0);
+                          box-sizing: border-box;
+                          border-right: none;
+                          border-top: none;
+                          border-left: 25px solid #FA6165;
+                          border-bottom: 25px solid rgba(0, 0, 0, 0);
+                      }
+                    .off{
+                      font-size: 13px;
+                      font-weight: bold;
+                    }
+                    .percent{
+                      font-size: 12px;
+                    }
+                }
+                &:hover{
+                    .imgs-link .imgs .first{
+                        top: -100%;
+                    }
+                    .imgs-link .imgs .second{
+                        top: 0;
+                    }
+                    .pannel{
+                        bottom: 0;
+                    }
+                  
+                }
+              .imgs-link{
+                .imgs{
+                    width: 100%;
+                    position: relative;
+                    height: 100%;
+                    transition: all ease .3s;
+                   
+                    .first{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index:100;
+                        transition: all ease .3s;
+                    }
+                    .second{
+                        width: 100%;
+                        position: absolute;
+                        top:100%;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1000;
+                        transition: all ease .3s;
+                    }
+                }
+              }
+              .pannel{
+                  position: absolute;
+                  bottom: -100%;
+                  left: 0;
+                  width: 100%;
+                  z-index: 1001;
+                  transition: all ease .3s;
+                .btns{
+                    width: 100%;
+                    background-color: rgba(0,0,0,.6);
+                    height: 40px;
+                    display: flex;
+                    margin:0;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        height: 100%;
+                        width: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        transition: all ease .3s;
+                        &:hover{
+                            background-color: rgba(0,0,0,.8);
+                           color: #f9bc02;
+                        }
+                        i{
+                            font-size: 18px;
+                            
+                        }
+                    }
+                }
+                .add-to-card{
+                   a{
+                    width: 100%;
+                    height: 40px;
+                    background-color: #F9BC02;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    i{
+                        margin-left: 10px;
+                       transition: all ease .3s;
+
+                    }
+                    span{
+                        transition: all ease .3s;
+                    }
+                    &:hover{
+                        i{
+                            margin-left: 15px;
+                        }
+                        span{
+                            margin-right: 5px;
+                        }
+                    }
+                   }
+                }
+              }
+            }
+            .col-12{
+                nav{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .pagination{
+                        .page-item{
+                            .page-link{
+                                border: 1px solid #e8e8e8 !important;
+                                color: #007dc5;
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}

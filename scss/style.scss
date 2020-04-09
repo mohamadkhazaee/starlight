@@ -1,0 +1,26 @@
+@import 'config.scss';
+@import 'variables.scss';
+@import 'header.scss';
+@import 'megamenu.scss';
+@import 'slider.scss';
+@import 'service-row.scss';
+@import 'related.scss';
+@import 'multi-tab.scss';
+@import 'amazing-suggest.scss';
+@import 'brands.scss';
+@import 'login.scss';
+@import 'shop.scss';
+@import 'item-details.scss';
+@import 'footer.scss';
+
+.theme-container{
+    padding-top: 40px;
+    width: 100% !important;
+    background-color:#f5f5f5 !important;
+    border-top: 1px solid #e8e8e8;
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1200px !important;
+    }
+}
