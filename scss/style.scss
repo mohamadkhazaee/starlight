@@ -10,9 +10,13 @@
 @import 'brands.scss';
 @import 'login.scss';
 @import 'shop.scss';
-@import 'item-details.scss';
+@import 'item-details.scss'; 
 @import 'footer.scss';
-
+ @import 'aboutPage.scss';
+ @import 'contactPage.scss';
+ @import 'buy-cart.scss';
+@import 'guidePage.scss';
+@import 'blog.scss';
 .theme-container{
     padding-top: 40px;
     width: 100% !important;
@@ -23,4 +27,4 @@
     .container {
         max-width: 1200px !important;
     }
-}
+} 

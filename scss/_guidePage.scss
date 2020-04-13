@@ -1,0 +1,28 @@
+#guidePage{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   .guide{
+    background-color: #f8f8f8;
+    padding: 30px 25px;
+    height: auto;
+    h3{
+        font-weight: bold;
+        color: #333;
+        font-size: 18px;
+        display: inline-block;
+    }
+    .guide-item{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 0;
+        color: #333;
+    }
+    .video-guide{
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        
+    }
+   }
+}

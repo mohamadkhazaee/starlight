@@ -223,6 +223,12 @@ $('#range-toggle-btn').click(function(){
 })
 
 
+//start of buy cart and wishlist
+$('.table-row-del').click(function(){
+    $(this).parent().parent().remove()
+})
+//end of buy cart and wishlist
+
 })
 
 //start of range price show

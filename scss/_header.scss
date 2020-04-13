@@ -84,9 +84,11 @@ header{
                 background-color: #f9bc02;
                 margin-left: 10px;
                 position: relative;
-                &:hover{
-                    .hover-card{
-                        display: flex;
+                @media screen and (min-width:992px){
+                    &:hover{
+                        .hover-card{
+                            display: flex;
+                        }
                     }
                 }
                  i{
