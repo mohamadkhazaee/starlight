@@ -224,37 +224,68 @@ header{
                  }
 
             }
+            .wishlist{
+                display: flex;
+                height: 40px;
+                width: 200px;
+                background-color: #f39c12;
+                margin-left: 10px;
+                 i{
+                     width: 40px;
+                     height: 40px;
+                     background-color: #f9bc02;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     font-size: 28px;
+                     color: #fff;
+                 }
+                 .text{
+                     width: 160px;
+                     height: 40px;
+                     color: #fff;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     .count{
+                         padding:0px 6px ;
+                         margin-right: 10px;
+                         border-radius: 50%;
+                         background-color: #f9bc02;
+                     }
+                 }
+            }
             .call{
-             display: flex;
-             height: 40px;
-             width: 200px;
-             background-color: #4caf50;
-             margin-left: 10px;
-              i{
-                  width: 40px;
-                  height: 40px;
-                  background-color: #62b965;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 28px;
-                  color: #fff;
-              }
-              .text{
-                  width: 160px;
-                  height: 40px;
-                  color: #fff;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  .count{
-                      padding:0px 6px ;
-                      margin-right: 10px;
-                      border-radius: 50%;
-                      background-color: #0095d9;
-                  }
-              }
-         }
+                display: flex;
+                height: 40px;
+                width: 200px;
+                background-color: #4caf50;
+                margin-left: 10px;
+                 i{
+                     width: 40px;
+                     height: 40px;
+                     background-color: #62b965;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     font-size: 28px;
+                     color: #fff;
+                 }
+                 .text{
+                     width: 160px;
+                     height: 40px;
+                     color: #fff;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     .count{
+                         padding:0px 6px ;
+                         margin-right: 10px;
+                         border-radius: 50%;
+                         background-color: #0095d9;
+                     }
+                 }
+            }
          .search-form{
              display: flex;
              justify-content: flex-start;
@@ -289,6 +320,30 @@ header{
 }
     }
 }
+@media screen and  (max-width: 1199px){
+    .top-menu{
+        width: 100%;
+        .second-row{
+            width: 100%;
+            .btns{
+                flex-wrap: wrap;
+                width: 100%;
+                .search-form{
+                    margin-top: 15px;
+                    width:  100% !important;
+                    input{
+                        width:  100% !important;
+                    }
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .second-row-logo-img{
+        display: none;
+    }
+   
+}
 @media screen and( max-width:991px){
     .top-menu{
         width: 100% !important;
@@ -307,11 +362,15 @@ header{
             font-size: 15px !important;
         }
         .cart{
-            width:  24% !important;
+            width:  30% !important;
             margin-left: 0 !important;
         }
         .call{
-            width:  24% !important;
+            width:  30% !important;
+            margin-left: 0 !important;
+        }
+        .wishlist{
+            width:  30% !important;
             margin-left: 0 !important;
         }
         .search-form{
@@ -403,10 +462,21 @@ header{
             margin-left: 0 !important;
             margin-bottom: 10px;
         }
-        .call{
+        .wishlist{
             width:  49% !important;
             margin-left: 0 !important;
             margin-bottom: 10px;
+        }
+        .call{
+            width:  100% !important;
+            margin-left: 0 !important;
+            margin-bottom: 10px;
+            .text{
+                width: 100% !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
         }
         .search-form{
             width:  100% !important;

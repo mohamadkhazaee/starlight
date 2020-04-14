@@ -229,6 +229,33 @@ header {
                     justify-content: center;
                     align-items: center;
                     background-color: #f9bc02; }
+          header .container .top-menu .second-row .btns .wishlist {
+            display: flex;
+            height: 40px;
+            width: 200px;
+            background-color: #f39c12;
+            margin-left: 10px; }
+            header .container .top-menu .second-row .btns .wishlist i {
+              width: 40px;
+              height: 40px;
+              background-color: #f9bc02;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 28px;
+              color: #fff; }
+            header .container .top-menu .second-row .btns .wishlist .text {
+              width: 160px;
+              height: 40px;
+              color: #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              header .container .top-menu .second-row .btns .wishlist .text .count {
+                padding: 0px 6px;
+                margin-right: 10px;
+                border-radius: 50%;
+                background-color: #f9bc02; }
           header .container .top-menu .second-row .btns .call {
             display: flex;
             height: 40px;
@@ -279,6 +306,23 @@ header {
       header .container .second-row-logo .second-row-logo-img {
         width: 120px; }
 
+@media screen and (max-width: 1199px) {
+  .top-menu {
+    width: 100%; }
+    .top-menu .second-row {
+      width: 100%; }
+      .top-menu .second-row .btns {
+        flex-wrap: wrap;
+        width: 100%; }
+        .top-menu .second-row .btns .search-form {
+          margin-top: 15px;
+          width: 100% !important;
+          margin-left: 0; }
+          .top-menu .second-row .btns .search-form input {
+            width: 100% !important; }
+  .second-row-logo-img {
+    display: none; } }
+
 @media screen and (max-width: 991px) {
   .top-menu {
     width: 100% !important; }
@@ -293,10 +337,13 @@ header {
     .btns i {
       font-size: 15px !important; }
     .btns .cart {
-      width: 24% !important;
+      width: 30% !important;
       margin-left: 0 !important; }
     .btns .call {
-      width: 24% !important;
+      width: 30% !important;
+      margin-left: 0 !important; }
+    .btns .wishlist {
+      width: 30% !important;
       margin-left: 0 !important; }
     .btns .search-form {
       width: 49% !important;
@@ -362,10 +409,19 @@ header {
       width: 49% !important;
       margin-left: 0 !important;
       margin-bottom: 10px; }
-    .btns .call {
+    .btns .wishlist {
       width: 49% !important;
       margin-left: 0 !important;
       margin-bottom: 10px; }
+    .btns .call {
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-bottom: 10px; }
+      .btns .call .text {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important; }
     .btns .search-form {
       width: 100% !important;
       margin-left: 0; }
