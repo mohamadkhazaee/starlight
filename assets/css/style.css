@@ -437,7 +437,7 @@ header {
         display: flex;
         justify-content: flex-start; }
         #megaMenu .container .category-menu li .mega-1 .mega-1-row .row-title {
-          color: #0095d9;
+          color: #F9BC02;
           font-size: 15px;
           font-weight: bold;
           display: flex;
@@ -446,7 +446,7 @@ header {
           align-items: center;
           box-sizing: border-box; }
           #megaMenu .container .category-menu li .mega-1 .mega-1-row .row-title:hover {
-            box-shadow: 0 1px 10px 1px #0095d9; }
+            box-shadow: 0 1px 10px 1px #F9BC02; }
           #megaMenu .container .category-menu li .mega-1 .mega-1-row .row-title i {
             font-size: 35px; }
         #megaMenu .container .category-menu li .mega-1 .mega-1-row .mega-1-row-list {
@@ -477,7 +477,7 @@ header {
               height: auto;
               max-height: 60px; }
             #megaMenu .container .category-menu li .mega-1 .mega-1-row .mega-1-row-list li a:hover {
-              box-shadow: 0 1px 10px 1px #0095d9; }
+              box-shadow: 0 1px 10px 1px #F9BC02; }
             #megaMenu .container .category-menu li .mega-1 .mega-1-row .mega-1-row-list li a i {
               font-size: 35px; }
     #megaMenu .container .category-menu li .mega-2 {
@@ -525,7 +525,7 @@ header {
             height: auto;
             max-height: 60px; }
           #megaMenu .container .category-menu li .mega-2 ul li a:hover {
-            box-shadow: 0 1px 10px 1px #0095d9; }
+            box-shadow: 0 1px 10px 1px #F9BC02; }
           #megaMenu .container .category-menu li .mega-2 ul li a i {
             font-size: 35px; }
       #megaMenu .container .category-menu li .mega-2 .img-mega-2 img {
@@ -1985,9 +1985,25 @@ header {
           margin-right: auto;
           margin-top: 20px;
           display: block;
-          transition: all ease .3s; }
-          #loginPage .forms-container .login form button:hover {
-            background-color: #F9BC02; }
+          transition: all ease .3s;
+          position: relative;
+          overflow: hidden; }
+          #loginPage .forms-container .login form button:hover::after {
+            left: 0; }
+          #loginPage .forms-container .login form button::after {
+            content: 'ورود';
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #FA6165;
+            top: 0;
+            left: -100%;
+            font-weight: bold;
+            font-size: 13px;
+            transition: all ease .3s; }
     #loginPage .forms-container .signup {
       margin-bottom: 10px;
       padding: 25px 20px;
@@ -2041,9 +2057,25 @@ header {
           margin-right: auto;
           margin-top: 20px;
           display: block;
-          transition: all ease .3s; }
-          #loginPage .forms-container .signup form button:hover {
-            background-color: #F9BC02; }
+          transition: all ease .3s;
+          position: relative;
+          overflow: hidden; }
+          #loginPage .forms-container .signup form button:hover::after {
+            left: 0; }
+          #loginPage .forms-container .signup form button::after {
+            content: 'ثبت نام';
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #FA6165;
+            top: 0;
+            left: -100%;
+            font-weight: bold;
+            font-size: 13px;
+            transition: all ease .3s; }
 
 @media screen and (max-width: 991px) {
   .forms-container {
@@ -2139,7 +2171,7 @@ header {
             color: #666;
             transition: all ease .4s; }
             #shopPage .row .shop-sideBar .sidebar-category .category-ul ul li a:hover {
-              color: #007dc5; }
+              color: #f9bc02; }
       #shopPage .row .shop-sideBar .sidebar-category .category-ul-open {
         height: 200px; }
     #shopPage .row .shop-sideBar .sidebar-range .range-header {
@@ -2180,7 +2212,7 @@ header {
         height: 20px;
         width: 20px;
         border-radius: 3px;
-        background: #007dc5;
+        background: #f9bc02;
         cursor: pointer;
         margin-top: -6px; }
       #shopPage .row .shop-sideBar .sidebar-range .range-box input[type=range]::-moz-range-thumb {
@@ -2188,24 +2220,25 @@ header {
         height: 20px;
         width: 20px;
         border-radius: 3px;
-        background: #007dc5;
+        background: #f9bc02;
         cursor: pointer; }
       #shopPage .row .shop-sideBar .sidebar-range .range-box input[type=range]::-ms-thumb {
         -webkit-appearance: none;
         height: 20px;
         width: 20px;
         border-radius: 3px;
-        background: #007dc5;
+        background: #f9bc02;
         cursor: pointer; }
       #shopPage .row .shop-sideBar .sidebar-range .range-box input[type=range]::-webkit-slider-runnable-track {
         width: 100%;
         height: 7px;
         cursor: pointer;
-        background: #3071a9;
+        background: #f9bc02;
         border-radius: 1.3px; }
       #shopPage .row .shop-sideBar .sidebar-range .range-box .price-show {
         margin-top: 8px; }
   #shopPage .row .shop-items-container .related-item {
+    direction: ltr !important;
     height: 300px;
     width: 100%;
     overflow: hidden;
@@ -2218,7 +2251,7 @@ header {
       padding-top: 10px;
       width: 50px;
       height: 40px;
-      background-color: #FA6165;
+      background-color: #f9bc02;
       top: 5px;
       top: 0;
       right: 20px;
@@ -2240,7 +2273,7 @@ header {
         box-sizing: border-box;
         border-left: none;
         border-top: none;
-        border-right: 25px solid #FA6165;
+        border-right: 25px solid #f9bc02;
         border-bottom: 25px solid transparent; }
       #shopPage .row .shop-items-container .related-item .item-badge::before {
         content: '';
@@ -2254,7 +2287,7 @@ header {
         box-sizing: border-box;
         border-right: none;
         border-top: none;
-        border-left: 25px solid #FA6165;
+        border-left: 25px solid #f9bc02;
         border-bottom: 25px solid rgba(0, 0, 0, 0); }
       #shopPage .row .shop-items-container .related-item .item-badge .off {
         font-size: 13px;
@@ -2337,13 +2370,23 @@ header {
           margin-left: 15px; }
         #shopPage .row .shop-items-container .related-item .pannel .add-to-card a:hover span {
           margin-right: 5px; }
-  #shopPage .row .shop-items-container .col-12 nav {
+  #shopPage .row .shop-items-container .col-12 .pagination-container {
     width: 100%;
     display: flex;
-    justify-content: center; }
-    #shopPage .row .shop-items-container .col-12 nav .pagination .page-item .page-link {
-      border: 1px solid #e8e8e8 !important;
-      color: #007dc5; }
+    justify-content: center;
+    align-items: center; }
+    #shopPage .row .shop-items-container .col-12 .pagination-container .pagination .page-item .page-link {
+      border: 1px solid #e8e8e8;
+      border-radius: 0 !important;
+      color: #666; }
+      #shopPage .row .shop-items-container .col-12 .pagination-container .pagination .page-item .page-link:hover {
+        background-color: #f9bc02;
+        color: #fff; }
+    #shopPage .row .shop-items-container .col-12 .pagination-container .pagination .active .page-link {
+      background-color: #f9bc02 !important;
+      color: #fff; }
+    #shopPage .row .shop-items-container .col-12 .pagination-container .pagination .disabled .page-link {
+      color: #999; }
 
 .item-details-Page {
   margin: 20px 0; }
@@ -2613,9 +2656,11 @@ header {
           color: #fff;
           font-size: 12px;
           background-color: #f9bc02;
-          transition: all ease-in-out .3s; }
+          transition: all ease-in-out .3s;
+          position: relative;
+          overflow: hidden; }
           .item-details-Page .item-details-content .order-box .order-btns .btn:hover {
-            background-color: #f9bc02; }
+            background-color: #f39c12; }
       .item-details-Page .item-details-content .order-box .item-icons {
         width: 280px;
         height: 40px;
@@ -2656,9 +2701,9 @@ header {
       transition: all ease .3s;
       margin-top: 20px; }
       .item-details-Page .tab-links a:hover {
-        background-color: #f9bc02; }
+        background-color: #f39c12; }
     .item-details-Page .tab-links .active {
-      background-color: #f9bc02; }
+      background-color: #f39c12; }
     @media screen and (max-width: 768px) {
       .item-details-Page .tab-links {
         justify-content: space-between; }
@@ -3339,7 +3384,25 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #F9BC02; }
+        background-color: #F9BC02;
+        position: relative;
+        overflow: hidden; }
+        #contactPage .contact-form form button:hover::after {
+          left: 0; }
+        #contactPage .contact-form form button::after {
+          content: 'ارسال پیام';
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          background-color: #FA6165;
+          top: 0;
+          left: -100%;
+          font-weight: bold;
+          font-size: 13px;
+          transition: all ease .3s; }
 
 #buy-card {
   margin-top: 20px;

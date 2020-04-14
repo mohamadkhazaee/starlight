@@ -329,8 +329,10 @@
                 font-size: 12px;
                 background-color: #f9bc02;
                 transition: all ease-in-out .3s;
+                position: relative;
+                overflow: hidden;
                 &:hover{
-                    background-color: #f9bc02;
+                    background-color: #f39c12;
                 }
                 }
                 
@@ -382,11 +384,11 @@
             transition: all ease .3s;
             margin-top: 20px;
             &:hover{
-                background-color: #f9bc02;
+                background-color: #f39c12;
             }
         }
         .active{
-            background-color: #f9bc02;
+            background-color: #f39c12;
         }
         @media screen and (max-width:768px){
             justify-content: space-between;
