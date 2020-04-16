@@ -1425,10 +1425,17 @@ header {
         .multi-tab .multi-tab-right .multi-tab-menus .nav-tabs .owl-topics .item li a {
           display: flex;
           justify-content: center;
+          flex-direction: column;
           align-items: center;
           color: #fff;
           background-color: #FB8184;
           height: 60px; }
+          .multi-tab .multi-tab-right .multi-tab-menus .nav-tabs .owl-topics .item li a span {
+            font-size: 12px; }
+          .multi-tab .multi-tab-right .multi-tab-menus .nav-tabs .owl-topics .item li a i {
+            font-size: 15px;
+            color: #fff;
+            margin-top: 7px; }
           .multi-tab .multi-tab-right .multi-tab-menus .nav-tabs .owl-topics .item li a:hover {
             text-decoration: none; }
         .multi-tab .multi-tab-right .multi-tab-menus .nav-tabs .muti-tab-menus-category {

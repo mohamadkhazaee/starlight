@@ -391,12 +391,20 @@
                          a{
                              display: flex;
                              justify-content: center;
+                             flex-direction: column;
                              align-items: center;
                              color: #fff;
                              background-color: #FB8184;
                              height: 60px;
+                             span{
+                                 font-size: 12px;
+                             }
+                             i{
+                                 font-size: 15px;
+                                 color: #fff;
+                                 margin-top: 7px;
+                             }
                              &:hover{
-
                                  text-decoration: none;
                              }
                          }
