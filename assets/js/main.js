@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+    //start of compare page
+    $('.item-close').click(function(){
+        $(this).parent().parent().remove();
+    })
+    //end of compare page
+
+
     //start ofhover add to card in main
     $('.remove-item').click(function(){
         $(this).parent().remove()
