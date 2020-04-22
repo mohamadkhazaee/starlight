@@ -85,6 +85,11 @@ $('.owl-item-slider .item a').click(function(){
         autoplayHoverPause:true,
         startPosition: 'URLHash'
     });
+
+    $('.url').click(function(){
+       $('.url').removeClass('active')
+       $(this).addClass('active')
+    })
     //end of slider owl carousel
     //start of res menu toggle
     $('.res-btn-toggle').click(function(){
